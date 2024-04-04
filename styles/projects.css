@@ -1,0 +1,65 @@
+h2 {
+    font-size: 60px;
+    margin: 0;
+}
+
+/* ***** HEADER ***** */
+
+#header {
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(41, 41, 41);
+}
+
+#header_left, #header_right {
+    background-color: rgb(61, 61, 61);
+}
+
+#header_left {
+    margin-right: 30px;
+    width: 70%;
+}
+
+#header_right {
+    width: 30%;
+}
+
+#mainHeader {
+    font-size: 100px;
+    margin: 0;
+}
+
+.header_right_section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.symbol {
+    margin: 15px;
+    background-color: rgb(166, 166, 166);
+    width: 30px;
+    height: 30px;
+}
+
+/* ***** DESCRIPTION ***** */
+
+#description {
+    background-color: rgb(41, 41, 41);
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.descr_image {
+    background-color: rgb(166, 166, 166);
+    width: 55rem;
+    height: 30rem;
+}
+
+#descr_text {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}

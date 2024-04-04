@@ -4,13 +4,22 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles/index.css">
+        <link rel="stylesheet" href="styles/global.css">
+        <!-- FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&family=Patrick+Hand+SC&family=VT323&display=swap" rel="stylesheet">
     </head>
     <body>
         <div id="navbar">
-            <h1>Victoria Hoang</h1>
-            <p>section</p>
-            <p>section</p>
-            <p>section</p>
+            <a href="index.html" id="nav_name"><h1>Victoria + Hoang</h1></a>
+            <a href="#progProjects" class="nav_subsections">+ Projects +</a>
+            <a href="artwork.html" class="nav_subsections">+ Artwork +</a>
+            <a href="" class="nav_subsections">+ Section +</a>
+            <div id="nav_contact">
+                <a href="https://www.linkedin.com/in/victoria-hoang1" target="_blank"><div class="logo"></div></a>
+                <a href="https://github.com/victori444" target="_blank"><div class="logo"></div></a>
+            </div>
         </div>
         <div id="aboutMe">
             <div id="aboutMe_image">
@@ -18,15 +27,15 @@
             </div>
             <div id="aboutMe_text">
                 <h1>hello!</h1>
-                <h1 id="aboutMe_name">I'm Victoria</h1>
-                <p>blablbalbalblabalbalbalbalbalbalbalbalblablablablabalbalbalblabalbalbalbalblablablablablablablablbal
-                    ablblblablablablablablablablablablablbablablablablabalbalbalbalbalbalbalbalbalbalbalablabalbaalbalbal
-                    ablablablablablablablabalblabalbalbalbalbalbal
+                <h1 id="aboutMe_name">I'm Victoria,</h1>
+                <p id="aboutMe_para">
+                    a Montreal-based multidisciplinary digital artist with a passion for creating visually engaging user experiences,
+                     currently pursuing my Bachelors degree in Computer Science + Computation Arts at Concordia University
                 </p>
             </div>
         </div>
         <div id="skillsOutline">
-            <h1>SKILLS OUTLINE</h1>
+            <h1>+ SKILLS OUTLINE +</h1>
             <div class="skills_subsection">
                 <p>Java</p>
                 <p>Python</p>
@@ -39,20 +48,22 @@
             </div>
         </div>
         <div id="progProjects">
-            <h1 class="projectTitle">PROJ1</h1>
-            <h1 class="projectTitle">PROJ1</h1>
-            <h1 class="projectTitle">PROJ1</h1>
-            <h1 class="projectTitle">PROJ1</h1>
-            <h1 class="projectTitle">PROJ1</h1>
+            <div id="projects_filter">
+                <!-- add onclick function to toggle visible projects-->
+                <p>+ All Projects +</p>
+                <p>+ Websites +</p>
+                <p>+ Video Games +</p>
+            </div>
+            <div id="project_titles">
+                <a href="/projects/desktopEmulator.html"><h1 class="projectTitle">DESKTOP EMULATOR</h1></a>
+                <h1 class="projectTitle">BOBBING BATS</h1>
+                <h1 class="projectTitle">TOTALLY MARI</h1>
+                <h1 class="projectTitle">SKADOOSH</h1>
+                <h1 class="projectTitle">PROJ1</h1>
+            </div>
         </div>
-        <div id="artwork_header">
-            <h1>SELECTED ARTWORK SELECTED ARTWORK</h1>
-        </div>
-        <div id="artwork_content">
-            <div class="artwork_container"></div>
-            <div class="artwork_container"></div>
-            <div class="artwork_container"></div>
-            <div class="artwork_container"></div>
+        <div>
+
         </div>
     </body>
 </html>
