@@ -3,17 +3,29 @@ h2 {
     margin: 0;
 }
 
+.section_container {
+    background-color: rgb(41, 41, 41);
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.section_text {
+    font-size: 20px;
+    line-height: 30px;
+}
+
 /* ***** HEADER ***** */
 
 #header {
     margin: 50px;
     display: flex;
     flex-direction: row;
-    background-color: rgb(41, 41, 41);
 }
 
-#header_left, #header_right {
+#header_right {
     background-color: rgb(61, 61, 61);
+    border-radius: 20px;
 }
 
 #header_left {
@@ -27,6 +39,12 @@ h2 {
 
 #mainHeader {
     font-size: 100px;
+    margin: 0;
+}
+
+#header_date {
+    font-size: 25px;
+    font-weight: bold;
     margin: 0;
 }
 
@@ -45,16 +63,9 @@ h2 {
 
 /* ***** DESCRIPTION ***** */
 
-#description {
-    background-color: rgb(41, 41, 41);
-    margin: 50px;
-    display: flex;
-    flex-direction: row;
-}
-
 .descr_image {
     background-color: rgb(166, 166, 166);
-    width: 55rem;
+    width: 60rem;
     height: 30rem;
 }
 
@@ -62,4 +73,17 @@ h2 {
     display: flex;
     flex-direction: column;
     padding: 30px;
+}
+
+/* ***** FEATURES ***** */
+#features_text {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+#features_image {
+    background-color: rgb(166, 166, 166);
+    width: 60rem;
+    height: 30rem;
 }

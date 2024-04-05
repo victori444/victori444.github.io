@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles/index.css">
         <link rel="stylesheet" href="styles/global.css">
+        <script src="script/index.js"></script>
         <!-- FONTS -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -49,17 +50,31 @@
         </div>
         <div id="progProjects">
             <div id="projects_filter">
-                <!-- add onclick function to toggle visible projects-->
-                <p>+ All Projects +</p>
-                <p>+ Websites +</p>
-                <p>+ Video Games +</p>
+                <p onclick="changeProjDisplay(allProjects)" class="filter_button">+ All Projects +</p>
+                <p onclick="changeProjDisplay(websites)" class="filter_button">+ Websites +</p>
+                <p onclick="changeProjDisplay(videoGames)" class="filter_button">+ Video Games +</p>
             </div>
             <div id="project_titles">
-                <a href="/projects/desktopEmulator.html"><h1 class="projectTitle">DESKTOP EMULATOR</h1></a>
-                <h1 class="projectTitle">BOBBING BATS</h1>
-                <h1 class="projectTitle">TOTALLY MARI</h1>
-                <h1 class="projectTitle">SKADOOSH</h1>
-                <h1 class="projectTitle">PROJ1</h1>
+                <div class="project_indiv_title" id="desktopEmulator">
+                    <a href="/projects/desktopEmulator.html"><h1 class="projectTitle">DESKTOP EMULATOR</h1></a>
+                    <p class="proj_year">2023</p>
+                    <p class="proj_type">Website</p>
+                </div>
+                <div class="project_indiv_title" id="bobbingBats">
+                    <h1 class="projectTitle">BOBBING BATS</h1>
+                    <p class="proj_year">2023</p>
+                    <p class="proj_type">Video Game</p>
+                </div>
+                <div class="project_indiv_title" id="totallyMari">
+                    <h1 class="projectTitle">TOTALLY MARI</h1>
+                    <p class="proj_year">2022-2023</p>
+                    <p class="proj_type">Website</p>
+                </div>
+                <div class="project_indiv_title" id="skadoosh">
+                    <h1 class="projectTitle">SKADOOSH</h1>
+                    <p class="proj_year">2020-2021</p>
+                    <p class="proj_type">Website</p>
+                </div>
             </div>
         </div>
         <div>
