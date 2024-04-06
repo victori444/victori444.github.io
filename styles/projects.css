@@ -4,7 +4,7 @@ h2 {
 }
 
 .section_container {
-    background-color: rgb(41, 41, 41);
+    /* background-color: rgb(41, 41, 41); */
     margin: 50px;
     display: flex;
     flex-direction: row;
@@ -26,6 +26,7 @@ h2 {
 #header_right {
     background-color: rgb(61, 61, 61);
     border-radius: 20px;
+    width: 30%;
 }
 
 #header_left {
@@ -33,13 +34,20 @@ h2 {
     width: 70%;
 }
 
-#header_right {
-    width: 30%;
+#header_left_top {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
 }
 
 #mainHeader {
     font-size: 100px;
     margin: 0;
+}
+
+#linkToProj {
+    width: 50px;
+    margin-left:20px;
 }
 
 #header_date {
@@ -64,9 +72,7 @@ h2 {
 /* ***** DESCRIPTION ***** */
 
 .descr_image {
-    background-color: rgb(166, 166, 166);
-    width: 60rem;
-    height: 30rem;
+    width: 50rem;
 }
 
 #descr_text {
@@ -82,8 +88,7 @@ h2 {
     padding: 30px;
 }
 
-#features_image {
-    background-color: rgb(166, 166, 166);
-    width: 60rem;
-    height: 30rem;
+.features_image {
+    width: 50rem;
+    margin: 20px;
 }
