@@ -3,23 +3,30 @@ light: #FFECD1
 green: #749C75 or #e8ecf2
 purple (light): #6A5D7B
 purple (dark): #5D4A66
-
-palette 2
-purple/grey main: #9ca2c3
-cool white: #e8ecf2
-warm brown: #594d59
 */
 
+/* :root {
+  --primary: #878db1;
+  --secondary: #e8ecf2;
+  --tertiary: #3d435e;
+} */
+
+:root {
+  --primary: #ffffff;
+  --secondary: #d24141;
+  --tertiary: #9c9595;
+}
+
 body {
-  background-color: #878db1;
+  background-color: var(--primary);
   margin: 0;
-  color: #e8ecf2;
+  color: var(--secondary);
   font-family: "Raleway", sans-serif;
   font-weight: lighter;
 }
 
 a {
-  color: #e8ecf2;
+  color: var(--secondary);
   text-decoration: none;
 }
 
@@ -29,7 +36,7 @@ a:hover {
 
 a:visited {
   text-decoration: none;
-  color: #e8ecf2;
+  color: var(--secondary);
 }
 
 h1, h2 {
@@ -42,14 +49,14 @@ h1, h2 {
 /* ******* NAVBAR ******* */
 
 #navbar {
-  border-bottom: 4px solid #e8ecf2;
+  border-bottom: 4px solid var(--secondary);
   display: flex;
   position: sticky;
   height: 70px;
 }
 
 #nav_name {
-  color: #e8ecf2;
+  color: var(--secondary);
   margin-left: 20px;
   text-decoration: none;
   /* display: none; */

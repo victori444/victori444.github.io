@@ -1,3 +1,5 @@
+
+
 h2 {
     font-size: 60px;
     margin: 0;
@@ -24,14 +26,14 @@ h2 {
 #header_right {
     display: flex;
     flex: row;
-    background-color: #e8ecf2;
-    color: #9ca2c3;
+    background-color: var(--secondary);
+    color: var(--primary);
     border-radius: 20px;
     flex-wrap: wrap;
 }
 
 #header_right a {
-    color: #9ca2c3;
+    color: var(--primary);
 }
 
 #header_left {
@@ -127,7 +129,8 @@ h2 {
         padding: 0px 5px;
     }
     .descr_image, .features_image {
-        width: 50vw;
+        padding: 20px;
+        width: 55vw;
     }
     .descr_text, .features_text {
         display: flex;
@@ -135,7 +138,8 @@ h2 {
         flex-wrap: wrap;
     }
     .features_text {
-        padding-right: 20px;
+        padding-right: 30px;
+        width: 20vw;
     }
     .proj_video {
         width: 50vw;

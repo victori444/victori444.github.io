@@ -1,3 +1,4 @@
+
 /* ******* SUBSECTIONS CONTAINER ******* */
 
 #aboutMe {
@@ -7,9 +8,8 @@
 /* ******* ABOUT ME ******* */
 
 #aboutMe_image {
-    background-color: #e8ecf2;
-    width: 80%;
-    height: 200px;
+    width: 80vw;
+    max-width: 300px;
 }
 
 #aboutMe_hello {
@@ -33,7 +33,7 @@
 /* ******* PROJECTS ******* */
 
 #project_titles a {
-    color: #e8ecf2;
+    color: var(--secondary);
     text-decoration: none;
 }
 
@@ -65,8 +65,8 @@
 .proj_mediums p {
     font-size: 12px;
     margin-right: 15px;
-    background-color: #3d435e;
-    color: #e8ecf2;
+    background-color: var(--tertiary);
+    color: var(--primary);
     padding: 5px;
     margin-top: 5px;
     border-radius: 10px 5px 10px 5px;
@@ -85,5 +85,24 @@
 
 .filter_button:hover {
     cursor: pointer;
+}
+
+@media (min-width: 700px) {
+    #aboutMe {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    #aboutMe_text {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 30vw;
+    }
+    #aboutMe_image {
+        width: 30vw;
+        padding: 20px;
+    }
 }
 
