@@ -3,7 +3,6 @@ var websites = "websites";
 var videoGames = "videoGames";
  
 function changeProjDisplay(projectType) {
-    console.log("filter clicked");
     if (projectType === "allProjects") {
         document.getElementById("desktopEmulator").style.display = "flex";
         document.getElementById("bobbingBats").style.display = "flex";
