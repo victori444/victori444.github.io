@@ -1,58 +1,39 @@
-/* ******* SUBSECTIONS ******* */
+/* ******* SUBSECTIONS CONTAINER ******* */
 
 #aboutMe {
-    display: flex;
-    flex-direction: row;
-    margin: 50px;
-    align-items: center;
-    justify-content: center;
-}
-
-#skillsOutline {
-    display: flex;
-    flex-direction: row;
-    column-gap: 30px;
-    padding: 50px;
-}
-
-#artwork_content {
-    display: flex;
-    flex-direction: row;
-    padding: 50px;
+    padding: 30px;
 }
 
 /* ******* ABOUT ME ******* */
 
 #aboutMe_image {
-    width: 500px;
-    height: 500px;
+    background-color: #e8ecf2;
+    width: 80%;
+    height: 200px;
+}
+
+#aboutMe_hello {
+    margin: 0;
 }
 
 #aboutMe_text {
-    width: 500px;
-    margin-left: 30px;
+    min-width: 200px;
 }
 
 #aboutMe_para {
-    font-size: 20px;
+    font-size: 15px;
 }
 
 #aboutMe_name {
     font-size: 70px;
+    line-height: 70px;
     margin: 0;
-}
-
-/* ******* SKILLS OUTLINE ******* */
-
-.skills_subsection {
-    width: 50%;
-    font-size: 20px;
 }
 
 /* ******* PROJECTS ******* */
 
 #project_titles a {
-    color: #567457;
+    color: #e8ecf2;
     text-decoration: none;
 }
 
@@ -60,27 +41,35 @@
     font-size: 90px;
     margin: 0;
     padding: 0px 30px;
-}
-
-.project_indiv_title:hover {
-    border: 5px solid #567457;
+    line-height: 80px;
 }
 
 .project_indiv_title {
-    border: 5px solid #FFECD1;
     display: flex;
-    flex-direction: row;
-    align-items: flex-end;
+    flex-direction: column;
+    padding: 10px 0px;
 }
 
-.proj_year, .proj_type{
+.proj_year {
     padding-right: 20px;
     font-size: 20px;
 }
 
-.proj_type {
-    border: 2px solid #567457;
-    border-radius: 5px;
+.proj_mediums {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0px 30px;
+}
+
+.proj_mediums p {
+    font-size: 12px;
+    margin-right: 15px;
+    background-color: #3d435e;
+    color: #e8ecf2;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 10px 5px 10px 5px;
 }
 
 #projects_filter {
@@ -91,24 +80,10 @@
 
 .filter_button {
     margin-right: 50px;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .filter_button:hover {
     cursor: pointer;
-}
-
-/* ******* ARTWORK ******* */
-#artwork_header {
-    height: 100px;
-    display: flex;
-    align-items: center;
-    padding: 0px 40px;
-    font-size: 30px;
-}
-
-.artwork_container {
-    width: 100px;
-    height: 100px;
 }
 

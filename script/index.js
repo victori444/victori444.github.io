@@ -5,21 +5,18 @@ var videoGames = "videoGames";
 function changeProjDisplay(projectType) {
     console.log("filter clicked");
     if (projectType === "allProjects") {
-        console.log("all projects");
         document.getElementById("desktopEmulator").style.display = "flex";
         document.getElementById("bobbingBats").style.display = "flex";
         document.getElementById("totallyMari").style.display = "flex";
         document.getElementById("skadoosh").style.display = "flex";
     }
     else if (projectType === "websites") {
-        console.log("websites");
         document.getElementById("desktopEmulator").style.display = "flex";
         document.getElementById("bobbingBats").style.display = "none";
         document.getElementById("totallyMari").style.display = "flex";
         document.getElementById("skadoosh").style.display = "flex";
     }
     else if (projectType === "videoGames") {
-        console.log("video games");
         document.getElementById("desktopEmulator").style.display = "none";
         document.getElementById("bobbingBats").style.display = "flex";
         document.getElementById("totallyMari").style.display = "none";

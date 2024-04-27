@@ -5,33 +5,33 @@ h2 {
 
 .section_container {
     /* background-color: rgb(41, 41, 41); */
-    margin: 50px;
-    display: flex;
-    flex-direction: row;
+    margin: 30px;
+    flex-direction: column;
 }
 
 .section_text {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: lighter;
 }
 
 /* ***** HEADER ***** */
 
 #header {
-    margin: 50px;
-    display: flex;
-    flex-direction: row;
+    margin: 30px;
 }
 
 #header_right {
-    background-color: #567457;
-    color: #FFECD1;
+    display: flex;
+    flex: row;
+    background-color: #e8ecf2;
+    color: #9ca2c3;
     border-radius: 20px;
-    width: 30%;
+    flex-wrap: wrap;
 }
 
 #header_right a {
-    color: #FFECD1;
+    color: #9ca2c3;
 }
 
 #header_left {
@@ -47,15 +47,13 @@ h2 {
 
 #mainHeader {
     font-size: 100px;
+    line-height: 90px;
     margin: 0;
 }
 
 #linkToProj {
-    width: 30px;
-    margin-left:20px;
-    background-color: #567457;
-    padding: 10px;
-    border-radius: 40%;
+    width: 50px;
+    margin:0px 10px;
 }
 
 #header_date {
@@ -68,35 +66,78 @@ h2 {
     display: flex;
     flex-direction: row;
     align-items: center;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 .symbol {
     margin: 15px;
-    background-color: rgb(166, 166, 166);
     width: 30px;
-    height: 30px;
 }
 
 /* ***** DESCRIPTION ***** */
 
 .descr_image {
-    width: 50rem;
+    width: 90vw;
 }
 
 #descr_text {
     display: flex;
     flex-direction: column;
-    padding: 30px;
 }
 
 /* ***** FEATURES ***** */
 #features_text {
     display: flex;
     flex-direction: column;
-    padding: 30px;
 }
 
 .features_image {
-    width: 50rem;
-    margin: 20px;
+    width: 90vw;
+}
+
+.proj_video {
+    width: 90vw;
+}
+
+@media (min-width: 1000px) {
+
+    .header {
+        display: flex;
+        flex-direction: row;
+    }
+    .header_left {
+        display: flex;
+        flex-direction: column;
+    }
+    .header_right {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section_container {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 50px;
+        align-items: center;
+    }
+    .section_text {
+        font-size: 20px;
+        line-height: 25px;
+        padding: 0px 5px;
+    }
+    .descr_image, .features_image {
+        width: 50vw;
+    }
+    .descr_text, .features_text {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .features_text {
+        padding-right: 20px;
+    }
+    .proj_video {
+        width: 50vw;
+    }
 }
