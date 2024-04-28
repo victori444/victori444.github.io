@@ -1,7 +1,7 @@
 
 
 h2 {
-    font-size: 60px;
+    font-size: 50px;
     margin: 0;
 }
 
@@ -14,7 +14,7 @@ h2 {
 .section_text {
     font-size: 15px;
     line-height: 20px;
-    font-weight: lighter;
+    /* font-weight: lighter; */
 }
 
 /* ***** HEADER ***** */
@@ -48,8 +48,8 @@ h2 {
 }
 
 #mainHeader {
-    font-size: 100px;
-    line-height: 90px;
+    font-size: 60px;
+    line-height: 50px;
     margin: 0;
 }
 
@@ -103,7 +103,9 @@ h2 {
 }
 
 @media (min-width: 1000px) {
-
+    h2 {
+        font-size: 60px;
+    }
     .header {
         display: flex;
         flex-direction: row;
@@ -115,6 +117,11 @@ h2 {
     .header_right {
         display: flex;
         flex-direction: column;
+    }
+    #mainHeader {
+        font-size: 100px;
+        line-height: 90px;
+        margin: 0;
     }
 
     .section_container {
@@ -142,6 +149,7 @@ h2 {
         width: 20vw;
     }
     .proj_video {
-        width: 50vw;
+        width: 45vw;
+        padding: 20px;
     }
 }

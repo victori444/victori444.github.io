@@ -12,7 +12,7 @@ purple (dark): #5D4A66
 } */
 
 :root {
-  --primary: #ffffff;
+  --primary: #fffbf1;
   --secondary: #d24141;
   --tertiary: #9c9595;
 }
@@ -22,7 +22,7 @@ body {
   margin: 0;
   color: var(--secondary);
   font-family: "Raleway", sans-serif;
-  font-weight: lighter;
+  /* font-weight: lighter; */
 }
 
 a {
@@ -71,7 +71,7 @@ h1, h2 {
 }
 
 .logo {
-  margin: 10px;
+  margin: 5px;
   width: 30px;
   height: 30px;
 }
@@ -100,4 +100,10 @@ h1, h2 {
     font-weight: 900;
     font-style: normal;
   }
+
+@media (min-width: 1000px) {
+  .logo {
+    margin: 10px;
+  }
+}
   
